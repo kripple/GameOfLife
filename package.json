@@ -1,0 +1,28 @@
+{
+  "name": "game-of-life",
+  "version": "2.0.0",
+  "description": "",
+  "main": "build/gameOfLife.js",
+  "scripts": {
+    "clean": "rimraf build",
+    "pretest": "tsc || true",
+    "test": "jasmine JASMINE_CONFIG_PATH=jasmine.json || true",
+    "tdd": "onchange \"**/*.ts\" --exclude build --initial -- yarn run test",
+    "jasmine": "jasmine"
+  },
+  "author": "Kelly R.",
+  "license": "ISC",
+  "dependencies": {
+    "lodash": "~4.17.4"
+  },
+  "devDependencies": {
+    "@types/jasmine": "~2.5.43",
+    "@types/lodash": "~4.14.53",
+    "@types/node": "~7.0.5",
+    "jasmine": "~2.5.3",
+    "jasmine-console-reporter": "~1.2.7",
+    "onchange": "~3.2.1",
+    "rimraf": "~2.6.1",
+    "typescript": "~2.1.6"
+  }
+}
